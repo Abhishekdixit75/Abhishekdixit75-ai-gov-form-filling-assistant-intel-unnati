@@ -1,0 +1,113 @@
+{
+  "form_name": "Income Certificate Application",
+  "version": "1.0",
+  "required_documents": [
+    "aadhaar",
+    "pan"
+  ],
+  "fields": {
+    "personal_details": {
+      "applicant_name": {
+        "label": "Applicant Name",
+        "type": "text",
+        "source_entity": "full_name",
+        "required": true
+      },
+      "father_or_husband_name": {
+        "label": "Father/Husband Name",
+        "type": "text",
+        "source_entity": "fathers_name",
+        "required": true
+      },
+      "date_of_birth": {
+        "label": "Date of Birth",
+        "type": "date",
+        "source_entity": "date_of_birth",
+        "required": true
+      },
+      "gender": {
+        "label": "Gender",
+        "type": "select",
+        "options": [
+          "Male",
+          "Female",
+          "Other"
+        ],
+        "source_entity": "gender",
+        "required": true
+      },
+      "mobile_number": {
+        "label": "Mobile Number",
+        "type": "tel",
+        "source_entity": "mobile_number",
+        "required": true
+      },
+      "religion": {
+        "label": "Religion",
+        "type": "text",
+        "source_entity": null,
+        "required": false
+      },
+      "category": {
+        "label": "Category",
+        "type": "select",
+        "options": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "source_entity": null,
+        "required": true
+      }
+    },
+    "identity_details": {
+      "aadhaar_number": {
+        "label": "Aadhaar Number",
+        "type": "text",
+        "source_entity": "aadhaar_number",
+        "required": true
+      },
+      "pan_number": {
+        "label": "PAN Number",
+        "type": "text",
+        "source_entity": "pan_number",
+        "required": false
+      }
+    },
+    "address_details": {
+      "full_address": {
+        "label": "Full Residential Address",
+        "type": "textarea",
+        "source_entity": "address",
+        "required": true
+      },
+      "district": {
+        "label": "District",
+        "type": "text",
+        "source_entity": "district",
+        "required": true
+      },
+      "tehsil": {
+        "label": "Tehsil",
+        "type": "text",
+        "source_entity": "tehsil",
+        "required": true
+      }
+    },
+    "income_details": {
+      "annual_income": {
+        "label": "Total Annual Income (Rs)",
+        "type": "number",
+        "source_entity": "annual_income",
+        "required": true
+      },
+      "income_source": {
+        "label": "Source of Income",
+        "type": "text",
+        "source_entity": null,
+        "required": true
+      }
+    }
+  }
+}

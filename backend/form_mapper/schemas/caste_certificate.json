@@ -1,0 +1,103 @@
+{
+    "form_name": "Caste Certificate Application",
+    "version": "1.0",
+    "required_documents": [
+        "aadhaar"
+    ],
+    "fields": {
+        "applicant_info": {
+            "applicant_name": {
+                "label": "Applicant Name",
+                "type": "text",
+                "source_entity": "full_name",
+                "required": true
+            },
+            "father_name": {
+                "label": "Father's Name",
+                "type": "text",
+                "source_entity": "fathers_name",
+                "required": true
+            },
+            "religion": {
+                "label": "Religion",
+                "type": "select",
+                "options": [
+                    "Hindu",
+                    "Muslim",
+                    "Sikh",
+                    "Christian",
+                    "Buddhist",
+                    "Jain",
+                    "Other"
+                ],
+                "source_entity": null,
+                "required": true
+            }
+        },
+        "caste_details": {
+            "category": {
+                "label": "Caste Category",
+                "type": "select",
+                "options": [
+                    "SC",
+                    "ST",
+                    "OBC",
+                    "EWS"
+                ],
+                "source_entity": null,
+                "required": true
+            },
+            "sub_caste": {
+                "label": "Sub-Caste",
+                "type": "text",
+                "source_entity": null,
+                "required": true
+            },
+            "issuing_authority": {
+                "label": "Issuing Authority",
+                "type": "select",
+                "options": [
+                    "Tehsildar",
+                    "SDM",
+                    "District Magistrate"
+                ],
+                "source_entity": null,
+                "required": true
+            }
+        },
+        "beneficiary_details": {
+            "recipient_name": {
+                "label": "Certificate for whom? (Beneficiary Name)",
+                "type": "text",
+                "source_entity": "full_name",
+                "required": true
+            },
+            "relation_with_applicant": {
+                "label": "Relation with Applicant",
+                "type": "select",
+                "options": [
+                    "Self",
+                    "Son",
+                    "Daughter",
+                    "Wife"
+                ],
+                "source_entity": null,
+                "required": true
+            }
+        },
+        "proof_details": {
+            "aadhaar_number": {
+                "label": "Aadhaar Number",
+                "type": "text",
+                "source_entity": "aadhaar_number",
+                "required": true
+            },
+            "application_number": {
+                "label": "Old Application Number (if any)",
+                "type": "text",
+                "source_entity": null,
+                "required": false
+            }
+        }
+    }
+}

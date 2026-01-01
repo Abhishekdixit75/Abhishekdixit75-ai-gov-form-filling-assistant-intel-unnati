@@ -1,0 +1,40 @@
+{
+    "form_name": "Voter ID Card",
+    "required_documents": [
+        "aadhaar",
+        "pan"
+    ],
+    "fields": {
+        "voter_details": {
+            "full_name": {
+                "label": "Full Name",
+                "type": "text",
+                "source_entity": "full_name",
+                "required": true
+            },
+            "epic_number": {
+                "label": "EPIC Number",
+                "type": "text",
+                "source_entity": "epic_number",
+                "required": true
+            },
+            "date_of_birth": {
+                "label": "Date of Birth",
+                "type": "date",
+                "source_entity": "date_of_birth",
+                "required": false
+            },
+            "gender": {
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    "Male",
+                    "Female",
+                    "Third Gender"
+                ],
+                "source_entity": "gender",
+                "required": true
+            }
+        }
+    }
+}

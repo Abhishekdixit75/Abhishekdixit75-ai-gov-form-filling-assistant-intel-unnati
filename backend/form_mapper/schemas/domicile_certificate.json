@@ -1,0 +1,86 @@
+{
+    "form_name": "Domicile Certificate Application",
+    "version": "1.0",
+    "required_documents": [
+        "aadhaar"
+    ],
+    "fields": {
+        "applicant_details": {
+            "applicant_name": {
+                "label": "Name of Applicant",
+                "type": "text",
+                "source_entity": "full_name",
+                "required": true
+            },
+            "father_name": {
+                "label": "Father's Name",
+                "type": "text",
+                "source_entity": "fathers_name",
+                "required": true
+            },
+            "date_of_birth": {
+                "label": "Date of Birth",
+                "type": "date",
+                "source_entity": "date_of_birth",
+                "required": true
+            },
+            "place_of_birth": {
+                "label": "Place of Birth",
+                "type": "text",
+                "source_entity": "district",
+                "required": true
+            }
+        },
+        "residence_details": {
+            "address": {
+                "label": "Current Address",
+                "type": "textarea",
+                "source_entity": "address",
+                "required": true
+            },
+            "police_station": {
+                "label": "Police Station (Thana)",
+                "type": "text",
+                "source_entity": null,
+                "required": true
+            },
+            "duration_of_stay": {
+                "label": "Duration of Stay (in Years)",
+                "type": "number",
+                "source_entity": null,
+                "required": true
+            },
+            "house_ownership": {
+                "label": "House Ownership Type",
+                "type": "select",
+                "options": [
+                    "Owned",
+                    "Rented",
+                    "Ancestral"
+                ],
+                "source_entity": null,
+                "required": true
+            }
+        },
+        "verification_details": {
+            "aadhaar_number": {
+                "label": "Aadhaar Number",
+                "type": "text",
+                "source_entity": "aadhaar_number",
+                "required": true
+            },
+            "reason_for_application": {
+                "label": "Reason for Application",
+                "type": "select",
+                "options": [
+                    "Education",
+                    "Employment",
+                    "Government Scheme",
+                    "Other"
+                ],
+                "source_entity": null,
+                "required": true
+            }
+        }
+    }
+}

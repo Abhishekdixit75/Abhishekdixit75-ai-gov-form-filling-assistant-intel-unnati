@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+/* Define Variables First */
+:root {
+  /* Government of India Palette */
+  --color-gov-navy: #002147;
+  --color-gov-blue: #1E3A8A;
+  --color-gov-saffron: #FF9933;
+  --color-gov-green: #138808;
+  --color-gov-light: #F1F1F1;
+  --color-gov-text: #333333;
+  --color-gov-bg-light: #F9FAFB;
+
+  --background: #ffffff;
+  --foreground: #333333;
+
+  /* Font Stack */
+  --font-sans: "Inter", "Noto Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.dark {
+  /* Adapted Dark Mode for Gov Theme (High Contrast) */
+  --background: #0b1120;
+  --foreground: #f8fafc;
+
+  --color-gov-navy: #1e293b;
+  --color-gov-blue: #3b82f6; 
+  /* Lighter navy for dark mode header compatibility */
+  --color-gov-text: #f8fafc;
+  --color-gov-bg-light: #111827;
+}
+
+@theme {
+  /* Register the custom colors as theme values */
+  --color-gov-navy: var(--color-gov-navy);
+  --color-gov-blue: var(--color-gov-blue);
+  --color-gov-saffron: var(--color-gov-saffron);
+  --color-gov-green: var(--color-gov-green);
+  --color-gov-light: var(--color-gov-light);
+  --color-gov-bg-light: var(--color-gov-bg-light);
+
+  /* Standard palette overrides or extensions */
+  --color-primary: var(--color-gov-navy);
+  --color-secondary: var(--color-gov-saffron);
+}
+
+body {
+  background-color: var(--color-gov-bg-light);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Utilities */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.dark .glass-panel {
+  background-color: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-gov-navy), var(--color-gov-saffron));
+}
+
+.card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific Govt Theme Utilities */
+.btn-primary {
+  background-color: var(--color-gov-blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem; /* rounded-md */
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af; /* darker blue */
+}
+
+.btn-secondary {
+  background-color: var(--color-gov-saffron);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem; 
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #ea580c; /* darker orange */
+}

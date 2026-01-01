@@ -1,0 +1,90 @@
+{
+    "description": "Global Entity Schema - Single Source of Truth for Citizen Data",
+    "version": "1.0",
+    "entities": {
+        "full_name": {
+            "description": "Full legal name of the citizen",
+            "type": "string"
+        },
+        "date_of_birth": {
+            "description": "Date of birth in YYYY-MM-DD format",
+            "type": "date"
+        },
+        "gender": {
+            "description": "Gender (MALE/FEMALE/OTHER)",
+            "type": "string"
+        },
+        "fathers_name": {
+            "description": "Father's full name",
+            "type": "string"
+        },
+        "mothers_name": {
+            "description": "Mother's full name",
+            "type": "string"
+        },
+        "husband_name": {
+            "description": "Husband's full name (if applicable)",
+            "type": "string"
+        },
+        "address": {
+            "description": "Full residential address",
+            "type": "string"
+        },
+        "district": {
+            "description": "District name (e.g. Kanpur Nagar)",
+            "type": "string"
+        },
+        "tehsil": {
+            "description": "Tehsil/Sub-district",
+            "type": "string"
+        },
+        "state": {
+            "description": "State name",
+            "type": "string"
+        },
+        "pincode": {
+            "description": "Postal code",
+            "type": "string"
+        },
+        "place_of_birth": {
+            "description": "City/Town/Village of birth",
+            "type": "string"
+        },
+        "aadhaar_number": {
+            "description": "12-digit UIDAI number",
+            "type": "string"
+        },
+        "vid_number": {
+            "description": "16-digit Virtual ID",
+            "type": "string"
+        },
+        "pan_number": {
+            "description": "10-character Permanent Account Number",
+            "type": "string"
+        },
+        "epic_number": {
+            "description": "Voter ID (EPIC) Number",
+            "type": "string"
+        },
+        "mobile_number": {
+            "description": "10-digit mobile number",
+            "type": "string"
+        },
+        "email": {
+            "description": "Email address",
+            "type": "string"
+        },
+        "annual_income": {
+            "description": "Annual household income",
+            "type": "number"
+        },
+        "religion": {
+            "description": "Religion",
+            "type": "string"
+        },
+        "caste_category": {
+            "description": "Social Category (SC/ST/OBC/General)",
+            "type": "string"
+        }
+    }
+}
