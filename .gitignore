@@ -78,3 +78,5 @@ pnpm-debug.log*
 # Large Media / Binary Files (Add specifics if needed, e.g. *.mp4)
 # *.mp4
 # *.mov
+
+backend/data/pages/
