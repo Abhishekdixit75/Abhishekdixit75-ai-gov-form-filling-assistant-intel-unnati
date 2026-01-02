@@ -109,9 +109,9 @@ See our detailed **[Performance Benchmarks](docs/performance_benchmarks/performa
 ---
 
 ## 👥 Team & Acknowledgements
-**Intel Unnati Industrial Training Program - Summer 2024**
+**Intel Unnati Industrial Training Program - 2025**
 
-Special thanks to our dedicated team members for their contributions to architecture, frontend development, and rigorous testing:
+Special thanks to the dedicated team members for their contributions to architecture, frontend development, and rigorous testing:
 
 *   **Abhishek Dixit** (Did something)
 *   **Devendra Kumar Dewangan** (Frontend)
