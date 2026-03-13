@@ -1,0 +1,85 @@
+{
+    "form_name": "Birth Certificate Application",
+    "version": "1.0",
+    "required_documents": [
+        "aadhaar"
+    ],
+    "fields": {
+        "child_details": {
+            "child_name": {
+                "label": "Name of Child (if any)",
+                "type": "text",
+                "source_entity": "full_name",
+                "required": false
+            },
+            "date_of_birth": {
+                "label": "Date of Birth",
+                "type": "date",
+                "source_entity": "date_of_birth",
+                "required": true
+            },
+            "gender": {
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    "Male",
+                    "Female",
+                    "Others"
+                ],
+                "source_entity": "gender",
+                "required": true
+            },
+            "place_of_birth": {
+                "label": "Place of Birth",
+                "type": "select",
+                "options": [
+                    "Hospital",
+                    "Home",
+                    "Other"
+                ],
+                "source_entity": null,
+                "required": true
+            },
+            "hospital_name": {
+                "label": "Hospital Name (if applicable)",
+                "type": "text",
+                "source_entity": null,
+                "required": false
+            }
+        },
+        "parent_details": {
+            "father_name": {
+                "label": "Father's Name",
+                "type": "text",
+                "source_entity": "fathers_name",
+                "required": true
+            },
+            "mother_name": {
+                "label": "Mother's Name",
+                "type": "text",
+                "source_entity": null,
+                "required": true
+            },
+            "grandfather_name": {
+                "label": "Grandfather's Name (Paternal)",
+                "type": "text",
+                "source_entity": null,
+                "required": false
+            }
+        },
+        "address_details": {
+            "permanent_address": {
+                "label": "Permanent Address of Parents",
+                "type": "textarea",
+                "source_entity": "address",
+                "required": true
+            },
+            "address_at_birth": {
+                "label": "Address at Time of Birth",
+                "type": "textarea",
+                "source_entity": "address",
+                "required": true
+            }
+        }
+    }
+}

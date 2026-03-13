@@ -1,0 +1,17 @@
+argon2-cffi
+fastapi==0.121.3
+numpy==1.26.4
+openai-whisper
+opencv-python==4.11.0.86
+paddleocr==3.3.2
+paddlepaddle==3.2.2
+passlib[argon2]
+PyMuPDF==1.26.7
+pymysql
+pydantic
+python-dotenv
+python-jose[cryptography]
+python-multipart==0.0.20
+pytesseract==0.3.13
+sqlalchemy
+uvicorn==0.38.0
